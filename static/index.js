@@ -10,6 +10,7 @@ function share() {
 }
 
 function bd() {
+    // localStorage.clear();
     let query = prompt("Image URL here");
     if(query === "default") {
         document.getElementById("background").src = "";

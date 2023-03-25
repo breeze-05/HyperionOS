@@ -2054,7 +2054,7 @@ window.addEventListener("keydown", (e) => {
     }
     if(keyNameLower == "p" && e.ctrlKey && e.altKey) {
         e.preventDefault();
-        new WIN("(link)[../player/player.html]", "(icon)[../resources/player.svg]", "(title)[Terbium Player]", "(os)[true]", "(fullscreen)[false]", '(appname)[player]');
+        new WIN("(link)[./player/player.html]", "(icon)[../resources/player.svg]", "(title)[Hyperion Player]", "(os)[true]", "(fullscreen)[false]", '(appname)[player]');
     }
     if(keyNameLower == "t" && e.ctrlKey && e.altKey) {
         e.preventDefault();
@@ -2125,7 +2125,7 @@ switch(id) {
         new WIN("(link)[../color/color.html]", "(title)[Terbium Color]", "(icon)[../resources/color-picker.svg]", "(os)[true]", "(fullscreen)[false]", '(appname)[color]');
         break;
     case "video":
-        new WIN("(link)[../player/player.html]", "(title)[Terbium Player]", "(icon)[../resources/player.svg]", "(os)[true]", "(fullscreen)[false]", '(appname)[player]');
+        new WIN("(link)[./player/player.html]", "(title)[Hyperion Player]", "(icon)[../resources/player.svg]", "(os)[true]", "(fullscreen)[false]", '(appname)[player]');
         break;
     case "settings":
         new WIN("(link)[../settings.html]", "(title)[Terbium Settings]", "(icon)[../resources/terbium.svg]", "(os)[true]", "(fullscreen)[false]", '(appname)[settings]');
@@ -2166,7 +2166,7 @@ switch(id) {
         new WIN("(link)[../taskManager/task.html]", "(icn)[../resources/task.svg]", "(title)[Terbium Task Manager]", "(os)[true]", "(full)[false]", "(nameapp)[task]");
         break;
     case "image":
-        new WIN("(link)[../image/image.html]", "(icn)[../resources/image.svg]", "(title)[Image Viewer]", "(os)[true]", "(full)[false]", "(appname)[image]");
+        new WIN("(link)[../image/image.html]", "(icn)[../resources/image.svg]", "(title)[Hyperion Image Viewer]", "(os)[true]", "(full)[false]", "(appname)[image]");
         break;
     case "ruffle":
         new WIN("../ruffle/ruffle.html", "../resources/ruffle.svg", "Ruffle", "()[true]", "(full)[false]", "()[ruffle]");
@@ -2175,7 +2175,7 @@ switch(id) {
         new WIN("../block/block.html", "../resources/block.svg", "Terbium Blocker", "()[true]", "()[false]", "()[block]", "()[minClose]");
         break;
     case "calc":
-        new WIN("(link)[../calc/calc.html]", "(icon)[../resources/calc.svg]", "(title)[Terbium Calculator]", "(browser)[false]", "(os)[true]", "(fullscreen)[false]", "(appName)[calc]", "(controls)[minClose]");
+        new WIN("(link)[../calc/calc.html]", "(icon)[../resources/calc.svg]", "(title)[Hyperion Calculator]", "(browser)[false]", "(os)[true]", "(fullscreen)[false]", "(appName)[calc]", "(controls)[minClose]");
         break;
     case "test":
         new WIN("(link)[../test/test.html]", "(icon)[../resources/test.svg]", "(title)[Terbium Test]", "(browser)[false]", "(os)[true]", "(fullscreen)[false]", "(appName)[test]", "(controls)[minClose]", "(text)[test]");

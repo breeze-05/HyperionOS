@@ -508,7 +508,7 @@ html {
 }
 
 .eye path.showing {
-    fill: #46D966;
+    fill: #4577ff;
 }
 
 .loginDetails {
@@ -605,7 +605,7 @@ input.pass {
     outline: none;
     transition: 200ms ease-in-out;
     text-align: center;
-    color: #45ff7c;
+    color: #4577ff;
     width: 100%;
 }
 
@@ -619,7 +619,7 @@ input.pass:focus {
 }
 
 .inputC.focus .bott {
-    background-color: #1ea356;
+    background-color: #4577ff;
 }
 
 .inputC.err .bott {
@@ -627,7 +627,7 @@ input.pass:focus {
 }
 
 .inputC.success .bott {
-    background-color: #84ffb7;
+    background-color: #45ff48;
 }
 
 .inputC.err input.pass {
@@ -636,15 +636,16 @@ input.pass:focus {
 }
 
 .inputC.success input.pass {
-    background-color: #41df83;
+    background-color: #45ff48;
     color: white;
 }
 
 .passState {
-    color: #1ea356;
+    color: #4577ff;
     font-family: prod;
     font-size: 21px;
     font-weight: bold;
+    
 }
 
 .spinner {
@@ -667,7 +668,7 @@ input.pass:focus {
 }
 
 .spinner .path {
-    stroke: #228e3d;
+    stroke: #4577ff;
     -webkit-animation: dash 1.5s ease-in-out infinite;
     animation: dash 1.5s ease-in-out infinite;
 }
