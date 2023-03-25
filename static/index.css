@@ -128,7 +128,7 @@
     --button-app-close-color: #ffaaaa;
     --button-app-close-hover-background: #da4343;
     --start-icon: #c9c9c9;
-    --start-icon-hover: #5be873;
+    --start-icon-hover: #4577ff;
     --start-apps-icon: #42bb57;
     --apps-background: #1e1e1e;
     --apps-button-background: #2d2d2d;
@@ -137,7 +137,7 @@
     --apps-search-background: #131313;
     --system-control-background: #262626;
     --system-control-icon-color: grey;
-    --system-control-icon-color-hover: #42bb57;
+    --system-control-icon-color-hover: #4577ff;
     
     /* clock */
     --fulltime-background: #333333;
@@ -149,7 +149,7 @@
     --desktopapp-background: #8c8c8c5e;
     --inputAppSearch-background: #373737;
     --inputAppSearchNoneFocus-color: #9d9d9d;
-    --inputAppSearch-focus-boxShadow: 0 0 54px -8px #75ff8c;
+    --inputAppSearch-focus-boxShadow: 0 0 54px -8px #4577ff;
     --inputAppSearch-focus-background: #373737a6;
     --inputAppSearch-color: #ffffff;
 
@@ -158,7 +158,7 @@
     --dock-button-background: #2d2d2d;
     --dock-alert-background: #47ca6360;
     --dock-button-boxshadow: #242424;
-    --dock-icon-color: #47CA64;
+    --dock-icon-color: #4577ff;
     --dock-icon-color2: #419854;
     --dock-button-inactive-span: #424242;
 

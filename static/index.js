@@ -151,6 +151,7 @@ if(localStorage.getItem("pass") == "new" || localStorage.getItem("pass") == null
     let secureAmount = loginDetails.querySelector('#secureAmount');
     function strengthChecker() {
         let password = document.getElementById('pass').value;
+        alert(password)
         let strengthMessage = document.getElementById('strengthMessage');
         params.letters = (/[a-z]+/.test(password)) ? true : false;
         params.numbers = (/[0-9]+/.test(password)) ? true : false;
@@ -224,8 +225,8 @@ if(localStorage.getItem("pass") == "new" || localStorage.getItem("pass") == null
             </div>
             <div class="bott" id="secureAmount"></div>
         </div>
-        <a class="forgot">Forgot Password?</a>
-    `;
+        
+    `; // <a class="forgot">Forgot Password?</a>
     function toggle() {
         let password = document.getElementById('pass');
         let eye = document.getElementById('showHide');

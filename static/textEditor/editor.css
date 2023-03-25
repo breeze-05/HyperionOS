@@ -88,7 +88,7 @@
     --body: #1c1c1c;
     --color: #dbdbdb;
     --button-background: #282928;
-    --button-color: #41bc5d;
+    --button-color: #4577ff;
     --button-inside-background: #444;
     --button-inside-background-hover: #606060;
     --scrollbar-background: #282928;
@@ -97,13 +97,13 @@
     --cursorNormal: url("../resources/cursors/normalD.png"), default;
     --cursorHand: url("../resources/cursors/handD.png"), pointer;
 
-    --switch-thumb: #41bc5d;
+    --switch-thumb: #4577ff;
     --switch-back: #313131;
-    --switch-back-shadow: #2b843f;
+    --switch-back-shadow: #4577ff;
 
-    --dropdown-boxShadow-hover: #41bc5d;
+    --dropdown-boxShadow-hover: #4577ff;
     --dropdown-button-background: #2b2a2a;
-    --dropdown-button-background-hover: #41bc5d;
+    --dropdown-button-background-hover: #4577ff;
     --dropdown-button-color-hover: white;
 }
 

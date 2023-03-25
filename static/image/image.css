@@ -8,15 +8,15 @@
     --body: #1c1c1c;
     --color: #d4d4d4;
     --button-background: #282928;
-    --button-color: #41bc5d;
+    --button-color: #4577ff;
 
     --cursorText: url("../resources/cursors/textD.png") 0 16, text;
     --cursorNormal: url("../resources/cursors/normalD.png"), default;
     --cursorHand: url("../resources/cursors/handD.png"), pointer;
 
-    --switch-thumb: #41bc5d;
+    --switch-thumb: #4577ff;
     --switch-back: #313131;
-    --switch-back-shadow: #2b843f;
+    --switch-back-shadow: #356afc;
 }
 
 [data-theme="night"] {

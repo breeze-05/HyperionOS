@@ -18,12 +18,12 @@
 
     --screenBackground: #1c1c1c;
     --buttonsBackground: #1c1c1c;
-    --buttonHover: #46C461;
+    --buttonHover: #4577ff;
     --buttonHoverColor: #ffffff;
 
     --delHover: #ff8d21;
     --acHover: #ff3636;
-    --eqHover: #41bc5d;
+    --eqHover: #4577ff;
 }
 
 [data-theme=night] {
@@ -41,7 +41,7 @@
 
     --delHover: #ff8d21;
     --acHover: #ff3636;
-    --eqHover: #41bc5d;
+    --eqHover: #4577ff;
 }
 
 [data-theme=fracital] {
