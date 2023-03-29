@@ -72,11 +72,6 @@ command.addEventListener("keydown", (e) => {
         `;
         e.preventDefault();
         output.innerHTML = "";
-        if(command.textContent.split(" ")[0] === "admin") {
-            output.innerHTML = `
-                <p>Admin commands:</p>
-            `;
-        }
         if(command.textContent.split(" ")[0] === "help") {
             output.innerHTML = `
                 <p>Available commands & keybindings:</p>

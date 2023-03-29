@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "@google-cloud/appengine-admin": "^2.2.1",
     "@tomphttp/bare-server-node": "^1.2.2",
+    "dotenv": "^16.0.3",
     "node-static": "^0.7.11",
     "npm": "^8.7.0",
     "path": "^0.12.7",
@@ -28,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/NovaAppsInc/windows-procy/issues"
   },
-  "homepage": "https://github.com/NovaAppsInc/windows-procy#readme"
+  "homepage": "https://github.com/NovaAppsInc/windows-procy#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.1"
+  }
 }

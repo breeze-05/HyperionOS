@@ -1,4 +1,5 @@
 const body = document.body;
+const fs = require('fs');
 let termId;
 window.addEventListener('message', function (e) {
     const data = JSON.parse(e.data);
@@ -73,11 +74,6 @@ command.addEventListener("keydown", (e) => {
         e.preventDefault();
         output.innerHTML = "";
         
-        if(command.textContent.split(" ")[0] === "admin") {
-            output.innerHTML = `
-                <p>Admin commands:</p>
-            `;
-        }
         if(command.textContent.split(" ")[0] === "help") {
             output.innerHTML = `
                 <p>Available commands & keybindings:</p>
@@ -93,7 +89,7 @@ command.addEventListener("keydown", (e) => {
                 <p><code class="command">Ctrl + H</code> --> Show previous commands</p>
             `;
         }
-        const availableCommands = ["help", "-h", "echo", "beta"];
+        const availableCommands = ["help", "-h", "echo", "beta", "admin"];
         if(!availableCommands.includes(command.textContent.split(" ")[0])) {
             output.innerHTML = `
                 <p>Command not found</p>
@@ -107,6 +103,25 @@ command.addEventListener("keydown", (e) => {
                 <div class="linebreak"></div>
             `;
         }
+
+        // Start of Custom Admin
+
+        if(command.textContent.split(" ")[0] === "beta") {
+            const lastArg = command.textContent.split(" ")[1];
+            if (lastArg === "opened") {
+                output.innerHTML = `<p>Succesfully opened beta</p>`;
+            } else if (lastArg === "closed") {
+                output.innerHTML = `<p>Succesfully closed beta</p>`;
+            } else if (lastArg === undefined) {
+                output.innerHTML = `<p>Missing argument <code>mode</code</p>`;
+            } else if (lastArg !== "opened" || lastArg !== "closed") {
+                output.innerHTML = `<p>Invalid argument <code>mode</code</p>`;
+            }
+
+        }
+
+        // End of Custom Admin
+
         if(command.textContent.split(" ")[0] === "-h") {
             if(command.textContent.split(" ")[1]) {
                 if(availableCommands.includes(command.textContent.split(" ")[1])) {
@@ -182,7 +197,7 @@ command.addEventListener("keydown", (e) => {
         }
         if(command.textContent.split(" ")[0] === ("version")) {
             output.innerHTML = `
-                <p>Terbium Version: ${version}</p>
+                <p>Hyperion Version: ${version}</p>
                 <div class="linebreak"></div>
             `;
         }
@@ -353,7 +368,7 @@ command.addEventListener("keydown", (e) => {
     }
     document.querySelector(".termin").appendChild(output);
     output.classList.add("output");
-})
+});
 
 window.addEventListener("load", function(e) {
     command.focus();
@@ -428,4 +443,4 @@ window.onmousedown = (e) => {
             });
         }
     }
-}
+};

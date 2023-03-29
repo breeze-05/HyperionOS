@@ -12,6 +12,7 @@
         <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#4cb05e">
         <link href="index.css" id="rels" rel="stylesheet">
         <script src="index.js" defer></script>
+        <script src="/js/notifications.js" defer></script>
         <script src="/js/tabs.js" defer></script>
 
         <script>
@@ -297,5 +298,21 @@
             }
         </script>
         <noscript style="position: absolute;">ENABLE JAVASCRIPT!! Thanks!</noscript>
+        <script id="__bs_script__">//<![CDATA[
+            (function() {
+              try {
+                var script = document.createElement('script');
+                if ('async') {
+                  script.async = true;
+                }
+                script.src = 'http://HOST:3000/browser-sync/browser-sync-client.js?v=2.29.1'.replace("HOST", location.hostname);
+                if (document.body) {
+                  document.body.appendChild(script);
+                }
+              } catch (e) {
+                console.error("Browsersync: could not append script tag", e);
+              }
+            })()
+          //]]></script>
     </body>
 </html>
